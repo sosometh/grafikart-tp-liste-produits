@@ -1,8 +1,8 @@
 import './ProductRow.css'
 
-export function ProductRow({ productName, productValue }) {
+export function ProductRow({ productName, productValue, style }) {
     return <tr>
-        <th>{productName}</th>
-        <th>{productValue}</th>
+        <td style={style}>{productName}</td>
+        <td>{productValue}</td>
     </tr>
 }

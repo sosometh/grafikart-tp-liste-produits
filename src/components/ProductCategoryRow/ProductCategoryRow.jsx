@@ -1,7 +1,9 @@
 import './ProductCategoryRow.css'
 
-export function ProductCategoryRow() {
-    return <div className='product-category-row'>
-
-    </div>
+export function ProductCategoryRow({name}) {
+    return <tr>
+        <th colSpan={2}>
+            {name}
+        </th>
+    </tr>
 }

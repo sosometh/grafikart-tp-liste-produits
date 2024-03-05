@@ -34,7 +34,6 @@ function App() {
   return <>
     <SearchBar changeOpt={setDataSearch} opt={dataSearch} />
     <ProductTable products={filteredProducts} />
-    {dataSearch.search}
   </>
 
 }
