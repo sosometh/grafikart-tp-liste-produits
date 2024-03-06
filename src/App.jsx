@@ -31,10 +31,10 @@ function App() {
     filteredProducts = filteredProducts.filter(product => product.stocked == true)
   }
 
-  return <>
+  return <div className="flex flex-wrap justify-center gap-5 p-4 mt-16 border-4 w-fit mx-auto rounded-md">
     <SearchBar changeOpt={setDataSearch} opt={dataSearch} />
     <ProductTable products={filteredProducts} />
-  </>
+  </div>
 
 }
 
